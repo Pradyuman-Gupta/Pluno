@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Leckerli+One&family=Merienda:wght@300..900&family=Pompiere&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  padding: 15px;
+  gap: 10px;
+  background-image: url("icons/bg_body.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  color: rgb(215, 215, 215);
+}
+
+.black_box {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1.00);
+  border: 1px solid rgba(255, 255, 255, 0.500);
+  box-shadow: 0 0 15px 0.5px #ffffff;
+  transition: box-shadow 0.4s ease-in-out;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Adjust color and opacity */
+  backdrop-filter: blur(5px);
+  /* Adjust the blur as needed */
+  /* Allows clicking through the overlay if needed */
+}
+
+.black_box:hover {
+  box-shadow: 0 0 30px 1.5px #ffffff;
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 75%;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  height: 30%;
+  width: 100%;
+  padding: 5px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 35%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title img {
+  height: clamp(2.5rem, 7.5vh, 7.5vw);
+}
+
+.title h1 {
+  font-size: clamp(2.5rem, 7.5vh, 7.5vw);
+  margin-bottom: -1.1vh;
+  color: #f3f1ee;
+}
+
+.option {
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.option li {
+  list-style: none;
+  padding: 5% 0;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  gap: 10%;
+}
+
+.home img {
+  height: clamp(1rem, 3vh, 3vw);
+}
+
+.home {
+  font-size: clamp(1.2rem, 3.5vh, 3.5vw);
+  font-family: "Pompiere", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.info img {
+  height: clamp(1rem, 3vh, 3vw);
+}
+
+.info {
+  font-size: clamp(1.2rem, 3.5vh, 3.5vw);
+  font-family: "Pompiere", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.motion {
+  height: 100%;
+  right: 0;
+}
+
+.song_list_box {
+  height: 70%;
+  width: 100%;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song_list_title {
+  padding: 5px;
+  font-size: clamp(2rem, 6vh, 6vw);
+  overflow: hidden;
+}
+
+.line {
+  height: 1.5px;
+  width: 100%;
+  background-color: #aaaaaa;
+}
+
+.song_list {
+  list-style: decimal;
+  height: 53vh;
+  margin: 8px 0 0 0;
+  padding: 6px 40px;
+  border-radius: 3px;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 0px 10px rgb(216, 216, 216);
+  transition: box-shadow 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.song_list:hover {
+  box-shadow: 0px 0px 2.5px rgb(216, 216, 216);
+}
+
+.song_list li::marker {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.song_list li {
+  display: list-item;
+  color: white;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 2.5vh, 2.5vw);
+}
+
+.song {
+  display: flex;
+  align-items: self-end;
+  height: clamp(2rem, 5vh, 5vw);
+}
+
+.name {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.name_s {
+  height: clamp(1rem, 2.5vh, 2.5vw);
+  padding: 5px;
+  display: inline;
+}
+
+@keyframes blueCyanPulse {
+  0% {
+    text-shadow: 0 0 3px #9cfcfc, 0 0 6px #1d4e6f, 0 0 10px #9cfcfc;
+  }
+
+  50% {
+    text-shadow: 0 0 6px #1d4e6f, 0 0 12px #9cfcfc, 0 0 16px #1d4e6f;
+  }
+
+  100% {
+    text-shadow: 0 0 3px #9cfcfc, 0 0 6px #1d4e6f, 0 0 10px #9cfcfc;
+  }
+}
+
+.home,
+.info,
+.song_list li,
+.song_list li::marker {
+  transition: all 0.3s ease-in-out;
+}
+
+.home:hover,
+.info:hover {
+  color: #ffffff;
+  animation: blueCyanPulse 1.5s ease-in-out infinite;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.song_list li:hover::marker {
+  color: #ffffff;
+  text-shadow: 0 0 6px #1d4e6f, 0 0 12px #9cfcfc, 0 0 16px #1d4e6f;
+}
+
+.song_list li:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #1d4e6f, 0 0 12px #9cfcfc, 0 0 16px #1d4e6f;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.playlist_box {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+}
+
+.playlist_list {
+  height: 72vh;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0 0 10px rgb(216, 216, 216);
+  transition: box-shadow 0.4s ease-in-out;
+  border-radius: 3px;
+  margin: 8px 0 0 0;
+  padding: 10px;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 50vh;
+  gap: 10px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-shrink: 0;
+}
+
+.playlist_list:hover {
+  box-shadow: 0px 0px 2.5px rgb(216, 216, 216);
+}
+
+.playlist {
+  background-color: rgba(58, 58, 58, 0.750);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  color: rgb(165, 165, 165);
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playlist.active {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px rgba(255, 191, 0, 0.800);
+  z-index: 2;
+}
+
+.playlist:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+.playlist img {
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.playlist_n {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p_name {
+  display: block;
+  white-space: nowrap;
+  color: rgb(255, 255, 255, 0.9);
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.75rem;
+}
+
+.p_name:hover {
+  animation: scrollText 4s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+
+  10% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-90%);
+  }
+
+  90% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.p_desc {
+  height: 100%;
+  width: 100%;
+  font-size: 0.83rem;
+
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.player {
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song_name_box {
+  width: 30%;
+  overflow: hidden;
+}
+
+.song_name {
+  font-size: clamp(1rem, 3vh, 3vw);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  display: block;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: transform 0.3s ease-in-out;
+  animation: scrollText_2 20s linear infinite;
+}
+
+@keyframes scrollText_2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  40% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-25%);
+  }
+
+  60% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.click_button button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.click_button button img {
+  height: clamp(1rem, 4vh, 4vw);
+}
+
+.click_button button:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.add {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add img {
+  height: clamp(3rem, 6vh, 6vw);
+}
+
+.add:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.time {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+  font-size: clamp(1rem, 3vh, 3vw);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bar {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+.bar_line {
+  height: 0.4vh;
+  width: 100%;
+  margin-top: 1.25vh;
+  background-color: #aaaaaa;
+  box-shadow: 0px 0px 3px 1px white;
+  align-self: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.circle_box {
+  z-index: 10;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  top: 0.7vh;
+  left: calc(0% - 5px);
+
+  background: #ffffff;
+  box-shadow: 0px 0px 3px 1px white;
+  position: relative;
+  transition: left 0.25s;
+  cursor: pointer;
+}
+
+.info_box {
+  height: 25vh;
+  width: 20vw;
+  top: 22%;
+  left: 7%;
+  padding: 10px;
+  position: fixed;
+
+  font-size: clamp(1rem, 2.5vh, 2.5vw);
+  font-family: "Pompiere", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  z-index: -10;
+}
