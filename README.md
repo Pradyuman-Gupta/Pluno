@@ -1,7 +1,8 @@
 # 🎵 Pluno – Local Playlist Music Player
 
 **Pluno** is a lightweight front-end web app that plays music directly from local folders. It reads playlists from a `songs/` directory, where each subfolder is treated as a playlist, containing `.mp3` files and optional `.jpg` cover images.
-
+<br>
+https://pradyuman-gupta.github.io/Pluno/
 ---
 
 ## 🚀 Features

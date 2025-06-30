@@ -536,6 +536,19 @@
 
 @media (max-aspect-ratio: 8/6) {
 
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main {
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+}
+
   .left {
     position: absolute;
     height: 0%;
@@ -593,7 +606,7 @@
   }
 
   .h_motion img {
-    height: clamp(2rem, 4.5vh, 4.5vw);
+    height: clamp(1.5rem, 4.5vh, 4.5vw);
   }
 
   .h_option {
