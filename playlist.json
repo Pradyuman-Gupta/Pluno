@@ -1,0 +1,160 @@
+[
+  {
+    "name": "Midnight Melody ✨",
+    "desc": "Soft tunes flicker like city lights in the dark, calm rhythms hum as dreams embark. A soundtrack for moonlit minds, where silence sings and night drifts.",
+    "cover": "Songs/Playlist_1/Cover.jpg",
+    "songs": [
+      {
+        "title": "Aankhon Se Batana",
+        "file": "Songs/Playlist_1/Track1.mp3"
+      },
+      {
+        "title": "Dil Tu Jaan Tu",
+        "file": "Songs/Playlist_1/Track2.mp3"
+      },
+      {
+        "title": "Finding Her",
+        "file": "Songs/Playlist_1/Track3.mp3"
+      },
+      {
+        "title": "Jhol",
+        "file": "Songs/Playlist_1/Track4.mp3"
+      },
+      {
+        "title": "Jo Tum Mere Ho",
+        "file": "Songs/Playlist_1/Track5.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Beyond Words 💫",
+    "desc": "Instrumental echoes, unspoken grace — melodies that move without a trace. Feelings rise where lyrics fade, in soundscapes where the heart is swayed.",
+    "cover": "Songs/Playlist_2/Cover.jpg",
+    "songs": [
+      {
+        "title": "Dzanum",
+        "file": "Songs/Playlist_2/Track1.mp3"
+      },
+      {
+        "title": "Suzume no Tojimari",
+        "file": "Songs/Playlist_2/Track2.mp3"
+      },
+      {
+        "title": "Sparkle",
+        "file": "Songs/Playlist_2/Track3.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Golden Era 🎙️",
+    "desc": "Golden memories drift through gentle sound, Old tunes that lift hearts off the ground, Voices of legends soft and slow, Songs from a time soul still knows.",
+    "cover": "Songs/Playlist_3/Cover.jpg",
+    "songs": [
+      {
+        "title": "Aa Chalke Tujhe",
+        "file": "Songs/Playlist_3/Track1.mp3"
+      },
+      {
+        "title": "Chhu Kae Mere Mann Ko",
+        "file": "Songs/Playlist_3/Track2.mp3"
+      },
+      {
+        "title": "Achha Ji Main Haari Chalo",
+        "file": "Songs/Playlist_3/Track3.mp3"
+      },
+      {
+        "title": "Badan Pe Sitare Lapete Huye",
+        "file": "Songs/Playlist_3/Track4.mp3"
+      },
+      {
+        "title": "Udein Jab Jab Zulfen Teri",
+        "file": "Songs/Playlist_3/Track5.mp3"
+      },
+      {
+        "title": "Pyar Hua Ikraar Hua",
+        "file": "Songs/Playlist_3/Track6.mp3"
+      },
+      {
+        "title": "Lag Jaa Gale",
+        "file": "Songs/Playlist_3/Track7.mp3"
+      },
+      {
+        "title": "Mere Samne Wali Khidki Mein",
+        "file": "Songs/Playlist_3/Track8.mp3"
+      },
+      {
+        "title": "Main Shayar To Nahin",
+        "file": "Songs/Playlist_3/Track9.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Lyrical Latte ☕️",
+    "desc": "Warm words swirl in mellow beats, like cream in coffee. Sip slow, feel the rhythm brew—a cozy blend of lyrics and soul for quiet mornings and gentle moods.",
+    "cover": "Songs/Playlist_4/Cover.jpg",
+    "songs": [
+      {
+        "title": "Bones",
+        "file": "Songs/Playlist_4/Track1.mp3"
+      },
+      {
+        "title": "Dark Aria",
+        "file": "Songs/Playlist_4/Track2.mp3"
+      },
+      {
+        "title": "Espresso",
+        "file": "Songs/Playlist_4/Track3.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Fuel the Fire🔥",
+    "desc": "Beats that burn, rhythms that race—each note a spark, each drop a blaze. Ignite your drive with music that fuels passion and sets your spirit on fire.",
+    "cover": "Songs/Playlist_5/Cover.jpg",
+    "songs": [
+      {
+        "title": "Aarambh",
+        "file": "Songs/Playlist_5/Track1.mp3"
+      },
+      {
+        "title": "Kar Har Maidan Fateh",
+        "file": "Songs/Playlist_5/Track2.mp3"
+      },
+      {
+        "title": "Mera Safar",
+        "file": "Songs/Playlist_5/Track3.mp3"
+      },
+      {
+        "title": "Shaabaashiyaan",
+        "file": "Songs/Playlist_5/Track4.mp3"
+      }
+    ]
+  },
+  {
+    "name": "80's & 90's Tape 📼",
+    "desc": "Rhythms of the past in every beat, From disco nights to mellow street, Cassettes rewind those golden days, Where voices danced in timeless ways.",
+    "cover": "Songs/Playlist_6/Cover.jpg",
+    "songs": [
+      {
+        "title": "Aankhein Khuli",
+        "file": "Songs/Playlist_6/Track1.mp3"
+      },
+      {
+        "title": "Akela Hai Mr Khiladi Miss Khiladi Chahiye",
+        "file": "Songs/Playlist_6/Track2.mp3"
+      },
+      {
+        "title": "Gulabi Aankhen jo teri dekhi",
+        "file": "Songs/Playlist_6/Track3.mp3"
+      },
+      {
+        "title": "Main Koi Aisa Geet Gaoon",
+        "file": "Songs/Playlist_6/Track4.mp3"
+      },
+      {
+        "title": "Saat Samundar Paar",
+        "file": "Songs/Playlist_6/Track5.mp3"
+      }
+    ]
+  }
+]
