@@ -9,7 +9,7 @@ https://pradyuman-gupta.github.io/Pluno/
 
 - 🎧 Plays `.mp3` songs from user-provided folders  
 - 📂 Organizes music into playlists (each folder = 1 playlist)  
-- 🖼️ Playlist image support (`.jpg`)  
+- 🖼️ Playlist image support (`.jpg`) 
 - 🗄️ Add the information about new playlist and tracks in playlist.json
 - ⚡ Fast, offline-friendly, no streaming required
 ---
@@ -33,7 +33,7 @@ https://pradyuman-gupta.github.io/Pluno/
 
 ## 🧑‍💻 Made By
 
-Pradyuman Gupta – 2025
+Pradyuman Gupta
 
 ---
 
