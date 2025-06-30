@@ -19,10 +19,36 @@ info.addEventListener('mouseleave', () => {
 });
 
 info.addEventListener('click', () => {
-    document.querySelector(".info_box").style.zIndex = "20";
+    const box = document.querySelector(".info_box");
+    const currentLeft = box.style.left;
+
+    if (currentLeft === "5%") {
+        box.style.left = "-25%";
+    } else {
+        box.style.left = "5%";
+    }
 });
-document.querySelector(".info_box").addEventListener('mouseleave', () => {
-    document.querySelector(".info_box").style.zIndex = "-10";
+
+document.querySelector(".h_info").addEventListener('click', () => {
+    const box = document.querySelector(".info_box");
+    const currentLeft = box.style.left;
+
+    if (currentLeft === "110%") {
+        box.style.left = "calc(50% - 10px)";
+    } else {
+        box.style.left = "110%";
+    }
+});
+
+document.querySelector(".hamburger").addEventListener('click', () => {
+    const box = document.querySelector(".song_list_box");
+    const currentLeft = box.style.left;
+
+    if (currentLeft === "-60%") {
+        box.style.left = "10px";
+    } else {
+        box.style.left = "-60%";
+    }
 });
 
 let playlist = [];
@@ -203,6 +229,10 @@ document.querySelector(".next_button").addEventListener("click", () => {
 });
 
 document.querySelector(".home").addEventListener("click", () => {
+    location.reload();
+});
+
+document.querySelector(".h_home").addEventListener("click", () => {
     location.reload();
 });
 
